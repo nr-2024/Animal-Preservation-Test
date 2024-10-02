@@ -1,9 +1,11 @@
+Animal Preservation
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Animal Preservation - Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,7 +64,7 @@
 <body>
 
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Animal Preservation</h2>
         <form action="/login" method="POST">
             <div class="input-group">
                 <label for="username">Username</label>
