@@ -61,7 +61,7 @@
 <body>
 
     <div class="login-container">
-        <h2>Animal Preservation</h2>
+        <h1>Animal Preservation</h1>
         <form action="/login" method="POST">
             <div class="input-group">
                 <label for="username">Username</label>
