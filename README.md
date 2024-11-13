@@ -21,7 +21,7 @@
             width: 300px;
             text-align: center;
         }
-        h2 {
+        h1 {
             margin-bottom: 20px;
             color: #333;
         }
@@ -62,7 +62,7 @@
 
     <div class="login-container">
         <h1>Animal Preservation</h1>
-        <form action="/login" method="POST">
+        <form id="login-form">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
@@ -77,6 +77,24 @@
             <p>Don't have an account? <a href="/register">Sign up</a></p>
         </div>
     </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+
+            // Get the input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Simple validation (this should be replaced with a real backend authentication check)
+            if (username === "admin" && password === "password") {
+                // Redirect to the dashboard or another page upon successful login
+                window.location.href = "/dashboard";  // Change this URL to the page you want to navigate to
+            } else {
+                alert("Invalid login credentials. Please try again.");
+            }
+        });
+    </script>
 
 </body>
 </html>
